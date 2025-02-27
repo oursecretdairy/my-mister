@@ -1,0 +1,74 @@
+body {
+    background-image: url("stars.jpg")
+  }
+
+.star-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.star, .star2, .star3, .star4, .star5 {
+    position: absolute;
+    width: 13px; 
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+/* Position each star randomly on the page */
+.star { 
+    top: 10%; left: 20%;
+ }
+.star2 { 
+    top: 40%; left: 60%;
+ }
+.star3 { 
+    top: 70%; left: 30%;
+ }
+.star4 { 
+    top: 20%; left: 80%;
+ }
+.star5 { 
+    top: 60%; left: 10%;
+ }
+
+/* Hover effect for a subtle glow animation */
+.star:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgb(255, 194, 150);
+}
+.star2:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgb(150, 216, 255);
+}
+.star3:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgb(241, 150, 255);
+}
+.star4:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgb(150, 255, 155);
+}
+.star5:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(255, 255, 150, 1);
+}
+
+.home-link {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1rem;
+    color: rgb(67, 92, 114);
+    text-decoration: none;
+    transition: opacity 1.5s ease-in-out, visibility 1.5s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for the home link */
+.home-link:hover {
+    color: rgb(255, 247, 236);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 15px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1); /* Stronger glow on hover */
+}
