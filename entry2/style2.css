@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(89, 111, 138);
+    text-align: center;
+}
+
+h2{
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-optical-sizing: auto;
+    font-style: light;
+    font-size: 3rem;
+    color:aliceblue;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-size: 1.3rem;
+    padding: 2rem;
+    color: aliceblue;
+}
+
+/* Home-link */
+.home-link{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1rem;
+    color: aliceblue;
+    font-family: "Poppins", serif;
+    transition: opacity 1.5s ease-in-out, visibility 1.5s ease-in-out;
+}
+.home-link:hover {
+    text-decoration: underline;
+    color:black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.active {
+    display: block;
+    animation: fade 3s infinite;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
